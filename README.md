@@ -1,2 +1,2 @@
 # FullStack
-# CURSO FULLTSTACK DA iTalents
+# Delivery com HTML, CSS, JS e REACT
