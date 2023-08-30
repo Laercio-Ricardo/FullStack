@@ -1,0 +1,66 @@
+/* Esse style vai guardar todas as configurações do HEADER e do RODAPÉ */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+    *{font-family: 'Mukta', sans-serif;
+    padding: 0;
+    margin: 0;
+    }
+
+    body{
+        /* Abaixo eu estou permitindo um valor minimo
+         de altura com base na altura total */
+        min-height: 100vh;
+
+
+    }
+    /*Abaixo a váriavel de acesso de todo o projeto, todo projeto pode acessar */
+    :root{
+        --background-clean: beige;
+        --cor-da-empresa: orange;
+    }
+
+    /*Começo da estilização do HEADER E DA NAV */
+
+    .cabecalho{
+        width: 100%;
+        background-image: url("/imagens/ultimo.png");
+    }
+.menu .ul-menu{
+ display: flex;   
+ justify-content: flex-end;
+ align-items: center; 
+
+}
+/* Aqui abaixo estou personalizando o menu, dando espaço entre eles
+Como o Li não é classe, o caminho fica esse abaixo */
+
+.ul-menu li{
+/*Aqui tira o estilo(Bolinhas dos icones)*/list-style: none;
+/*Aqui da espaço entre os icones*/padding: 2rem;
+color: white;
+}
+.bi-person-workspace{
+
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+.bi-geo-alt{
+    font-size: 60px;
+    color: var(--background-clean);
+
+}
+
+.nome-localizacao{
+
+  font-size: 40px;
+  padding-left: 0%;
+  padding-right: 5rem;
+}
+
+.bi-award{
+    font-size: 60px;
+    color: var(--background-clean);
+    
+}
