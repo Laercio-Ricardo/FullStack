@@ -1,8 +1,13 @@
+/* Aqui abaixo é o link que importa todos as fontes do GOOGLE, abaixo importei a fonte MUKTA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
 /* Esse style vai guardar todas as configurações do HEADER e do RODAPÉ */
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 
-    *{font-family: 'Mukta', sans-serif;
+
+    *{font-family: 'Noto Sans', sans-serif;
     padding: 0;
     margin: 0;
     }
@@ -16,16 +21,19 @@
     }
     /*Abaixo a váriavel de acesso de todo o projeto, todo projeto pode acessar */
     :root{
-        --background-clean: beige;
+        --background-clean: white;
         --cor-da-empresa: orange;
     }
 
-    /*Começo da estilização do HEADER E DA NAV */
+    /*Começo da estilização do HEADER E DA NAV
+    abaixo as modificações banneer */
 
     .cabecalho{
         width: 100%;
-        background-color: orange;
+       background-image: url("./banner.png");
     }
+
+    /*Modificação do menun */
 .menu .ul-menu{
  display: flex;   
  justify-content: flex-end;
@@ -37,8 +45,12 @@ Como o Li não é classe, o caminho fica esse abaixo */
 
 .ul-menu li{
 /*Aqui tira o estilo(Bolinhas dos icones)*/list-style: none;
-/*Aqui da espaço entre os icones*/padding: 2rem;
+/*Aqui da espaço entre os icones*/
+padding: 2rem;
 color: white;
+
+
+/*personalisando os icones de login, localização e o banner da parte de cima*/
 }
 .bi-person-workspace{
 
