@@ -30,8 +30,8 @@
 
     .cabecalho{
         width: 100%;
-       background-image: url("./banner.png");
-    }
+        background-color: var(--cor-da-empresa);
+           }
 
     /*Modificação do menun */
 .menu .ul-menu{
@@ -46,12 +46,17 @@ Como o Li não é classe, o caminho fica esse abaixo */
 .ul-menu li{
 /*Aqui tira o estilo(Bolinhas dos icones)*/list-style: none;
 /*Aqui da espaço entre os icones*/
-padding: 2rem;
+padding: .2rem;
 color: white;
 
 
 /*personalisando os icones de login, localização e o banner da parte de cima*/
 }
+
+.bi-person-workspace:hover{
+    color: chartreuse;
+}
+
 .bi-person-workspace{
 
     font-size: 60px;
@@ -61,7 +66,7 @@ color: white;
 ul li#imagem-localizacao{
     display: flex;
    padding-right: 0;
-   padding-left: 5rem;
+   padding-left: .5rem;
    margin-right: .8rem;
    align-items: center;
     
@@ -77,11 +82,133 @@ ul li#imagem-localizacao{
 
   font-size: 40px;
   padding-left: 0%;
-  padding-right: 5rem;
+  padding-right: .5rem;
   }
 
 .bi-award{
     font-size: 60px;
     color: var(--background-clean);
     
+
+}
+/*Vamos começar a estilar da sessão das mensagens */
+
+/*Aqui chama a section e o # faz o link pro ID*/
+section.mensagens-inicio{
+ padding: 2rem;
+ background-color: var(--background-clean);
+ 
+
+}
+#nome-empresa{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--cor-da-empresa);
+}
+.mensagem{
+font-size: 20px;
+}
+/*Estilização da busca */
+section.input{
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+i.bi-search-heart-fill{
+    position: absolute;
+    color: var(--cor-da-empresa);
+    padding-top: .2rem;
+    padding-left: 3rem;
+    font-size: 30px;
+    }
+    #input-text{
+        width: 90%;
+        margin: auto;
+        font-size: 25px;
+        padding: .2rem .0rem .4rem;      
+        padding-left: 5rem;
+    }
+
+
+/* Aqui vamos começar a estilizar o FOOTER */
+
+.footer{
+    background-color: var(--background-clean);
+    margin-top: .5rem;
+}
+.footer-card{
+    display: flex;/*Coloca os itens lado a lado*/
+    justify-content: space-around;/*Da espaço entre os itens*/
+    align-items: baseline;
+    }
+    
+.footer-card li{
+
+    list-style: none;
+} 
+
+.footer-card a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}  
+
+.footer-item{
+    margin: .5rem;
+}
+
+
+i.bi-house{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+    
+}
+/*ABAIXO COLOQUEI HOVER NOS ICONES, PRA DAR UMA APARENCIA MELHOR */
+i.bi-house:hover{
+    color: chartreuse;
+
+}
+i.bi-person-fill-add:hover{
+    color: chartreuse}
+
+i.bi-person-fill-add{
+    font-size: 60px;
+    color: var(--cor-da-empresa);   
+    
+
+}
+i.bi-handbag:hover{
+    color: chartreuse}
+
+i.bi-handbag{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+
+}
+
+i.bi-cart4:hover{
+    color: chartreuse}
+
+i.bi-cart4{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+
+}
+
+i.bi-stickies:hover{
+    color: chartreuse}
+
+i.bi-stickies{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+
+}
+.footer-nome-item{
+    font-size: 20px;
+    font-weight: 400;/*Aqui coloca a fonte mais escura*/
+
+
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery do Lalá e Gih</title>
+    <title>Delivery do Lá Ele</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style_padrao.css">
 </head>
@@ -20,15 +20,16 @@
     </header>
     <!--Agora é o conteudo principal-->
     <main>
-        <span>
-            <h1>Restaurante Lá Ele</h1>
-            <h2>Olá, sejá bem vindo</h2>
-            <h3>Faça seu Pedido</h3>
-        </span>
+            <section class="mensagens-inicio">
+            <h1 id="nome-empresa">Restaurante Lá Ele</h1>
+            <h2 class="mensagem">Olá, sejá bem vindo</h2>
+            <h3 class="mensagem">Faça seu Pedido</h3>
+        </section>
         <!--Adicionar busca no site-->
-        <section>
+        <section class="input">
             <i class="bi bi-search-heart-fill"></i>
-            <input type="text" placeholder="Faça seu pedido aqui">
+            <input id="input-text"
+            type="text" placeholder="Faça seu pedido aqui">
         </section>
         <section>
             <ul>
@@ -67,19 +68,35 @@
             <i class="bi bi-hand-thumbs-down"></i>
             <span>Sua avaliação é muito importante!</span>
         </section>
-        <footer>
-            <ul>
-                <li>
-                    <a href=""><i class="bi bi-house"></i><p>Home</p></a>
+        <footer id="footer" class="footer">
+            <ul class="footer-card">
+                <a href="home.html">
+                <li class="footer-item">
+                    <i class="bi bi-house"></i>
+                    <p class="footer-nome-item">Home</p>
+                
+                </li></a>
+                <a href="cadastro_usuario.html">
+                    <li class="footer-item">
+                    <i class="bi bi-person-fill-add"></i>
+                    <p class="footer-nome-item">Cadastro do Usúario</p>
+                </li></a>
+                <a href="cadastro_produto.html">
+                    <li class="footer-item">
+                    <i class="bi bi-handbag"></i>
+                    <p class="footer-nome-item">Cadastro de Produtos</p>
+                </li></a>
+                <li class="footer-item">
+                <a href="carrinho.html"><i class="bi bi-cart4"></i>
+                    <p class="footer-nome-item">Carrinho</p>
                 </li>
-                <li>
-                    <a href=""><i class="bi bi-person-fill-add"></i><p>Cadastro do Usúario</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-handbag"></i><p>Cadastro de Produtos</p></a>
-                </li>
-                <a href=""><i class="bi bi-cart4"></i><p>Carrinho</p></a>
-                </li>
+            </a>
+                <a href="produtos.html">
+                    <li class="footer-item">
+                <i class="bi bi-stickies"></i>
+                <p class="footer-nome-item">Produtos</p>
+               </li>
+               </a>
             </ul>
         </footer>
     </main>
